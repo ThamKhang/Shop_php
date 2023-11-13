@@ -16,6 +16,7 @@ $conn = mysqli_connect('localhost', 'root', '', 'lagi.shop');
 $query = "SELECT * FROM cart WHERE userId = '$userId' AND productId = '$productId'";
 $result = mysqli_query($conn, $query);
 //dhasijdhaisdhuiashduiash
+//ndjaknsdjkasndjkansdkjansdkjnasd
 if (mysqli_num_rows($result) > 0) { // nếu sản phẩm đã có trong giỏ hàng thì cập nhật số lượng
 $row = mysqli_fetch_assoc($result);
 $cartID = $row['cartID'];
